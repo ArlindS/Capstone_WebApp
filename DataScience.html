@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Academia</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/bulma.min.css" />
+    <link rel="stylesheet" href="/rating.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!--Header-->
+
+    <main>
+      <div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img
+                src="https://cdn.glitch.com/0e6a1e14-05f6-4049-a9be-b096fa254aca%2Facademia-logo-white.png?v=1603725240057"
+                width="130"
+              />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="index.html">
+                Home
+              </a>
+
+              <a class="navbar-item">
+                About
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Subjects
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    About
+                  </a>
+                  <a class="navbar-item">
+                    Jobs
+                  </a>
+                  <a class="navbar-item">
+                    Contact
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    Report an issue
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="columns">
+        <!-- Subjects column !-->
+        <div class="column is-narrow">
+          <div class="box" style="width: 275px;">
+            <p class="title is-5">Subjects</p>
+            <div class="select is-multiple">
+              <select multiple size="20" onchange="location = this.value;">
+                <option value="BigData.html">Big Data</option>
+                <option value="DataMining.html">Data Mining</option>
+                <option value="HumanComputerInteraction.html"
+                  >Human Computer Interaction</option
+                >
+                <option value="VirtualReality.html">Virtual Reality</option>
+                <option value="MachineLearning.html">Machine Learning</option>
+                <option value="ArtificialIntelligence.html"
+                  >Artificial Intelligence</option
+                >
+                <option value="Robotics.html">Robotics</option>
+                <option value="NLP.html">Natural Language Processing</option>
+                <option value="ComputerVision.html">Computer Vision</option>
+                <option value="ImageProcessing.html">Image Processing</option>
+                <option value="SuperComputing.html">Super Computing</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search column !-->
+
+        <div class="column">
+          <div class="box">
+            <p class="title is-1">Data Science and Computer Application</p>
+            <p class="subtitle">
+              Data science is an inter-disciplinary field that uses scientific methods,
+              processes, algorithms and systems to extract knowledge and insights from 
+              many structural and unstructured data. Data science is related to data 
+              mining, machine learning and big data. Data science is a "concept to unify 
+              statistics, data analysis and their related methods" in order to "understand 
+              and analyze actual phenomena" with data. It uses techniques and theories 
+              drawn from many fields within the context of mathematics, statistics, 
+              computer science, domain knowledge and information science.
+          
+              Application of Computer Science is simply a field that focus on
+              the way computer science and engineering is applied to make things 
+              happen in our world.
+            </p>
+          </div>
+          
+          <div class="is-vertical">
+            <div class="box">
+              <p class="title is-2">Resources</p>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Link</th>
+                    <th>Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://www.youtube.com/watch?v=X3paOmcrTjQ"
+                      >
+                        Simplilearn Youtube</a
+                      >
+                    </td>
+                    <td>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+                      <div class="box-body">
+                        <select id="r1" name="rating" autocomplete="off">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9" selected="selected">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.youtube.com/watch?v=xC-c7E5PK0Y&t=37s">
+                        Joma Tech Youtube</a
+                      >
+                    </td>
+                    <td>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+                      <div class="box-body">
+                        <select id="r2" name="rating" autocomplete="off">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8" selected="selected">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Data_science"
+                      >
+                        Wikipedia definition
+                      </a>
+                    </td>
+                    <td>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+                      <div class="box-body">
+                        <select id="r3" name="rating" autocomplete="off">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7" selected="selected">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="is-vertical">
+            <div class="box">
+              <p class="title is-2">Recommended Sequence:</p>
+              <p class="subtitle">
+                It is suggest that before you have some foundational understanding of
+                certain mathematical disciplines before you look into these subfields.
+                Statistics, probability, Linear Algebra, Calculus, and all highschool 
+                level maths should have been completed to proficiently learn the material.
+                There is no particular recommended order but some topics help transition 
+                for other ones. 
+              </p>
+              <div class="content">
+                <ol type="1">
+                  <li>Computer Architecture</li>
+                  <li>Programming Languages</li>
+                  <li>Operating Systems</li>
+                  <li>Compilers</li>
+                  <li>Computer Graphics</li>
+                  <li>Data Management</li>
+                  <li>Networks</li>
+                  <li>Software Engineering</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="is-vertical">
+            <div class="box">
+              <p class="title is-2">Dicussion:</p>
+
+              <div id="disqus_thread"></div>
+              <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() {
+                  // DON'T EDIT BELOW THIS LINE
+                  var d = document,
+                    s = d.createElement("script");
+                  s.src = "https://compscience.disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript
+                >Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript"
+                  >comments powered by Disqus.</a
+                ></noscript
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="contact">
+      <div class="content-wrap"></div>
+    </footer>
+  </body>
+</html>
